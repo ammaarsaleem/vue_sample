@@ -10,7 +10,32 @@
      name:"AboutPage",
      props: {
        about: String
-     }
+     },
+     beforeCreate() {
+    console.log('Component is about to be created.');
+  },
+  created() {
+    console.log('Component has been created.');
+    this.$emit("About page has been created");
+  },
+  beforeMount() {
+    console.log('Component is about to be mounted.');
+  },
+  mounted() {
+    console.log('Component has been mounted.');
+  },
+  beforeUpdate() {
+    console.log('Component is about to update.');
+  },
+  updated() {
+    console.log('Component has been updated.');
+  },
+  beforeUnmount() {
+    console.log('Component is about to be unmounted.');
+  },
+  unmounted() {
+    console.log('Component has been unmounted.');
+  }
  }
  
  </script>
